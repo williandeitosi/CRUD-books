@@ -1,0 +1,11 @@
+<form action="{{url_for('book.insert_book')}}" method="post">
+  <div class="mb-3">
+    <label for="exampleInputText1" class="form-label">Book Title</label>
+    <input type="text" name="title" class="form-control" id="exampleInputText1">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputText1" class="form-label">Author</label>
+    <input type="text" name="author" class="form-control" id="exampleInputText1">
+  </div>
+  <button hx-post="/" type="submit" class="btn btn-primary">Submit</button>
+</form>
